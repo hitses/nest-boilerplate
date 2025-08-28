@@ -6,7 +6,6 @@ import passport from 'passport';
 import { sessionConfig } from './config/session.config';
 import { corsOptions } from './config/cors.config';
 import { globalValidationPipe } from './config/validation.config';
-import { APP_CONFIG } from './config/app.config';
 
 async function bootstrap() {
   // Start the application from the main module
@@ -44,7 +43,7 @@ async function bootstrap() {
   await app.listen(port);
 
   Logger.log(
-    `🚀 ${APP_CONFIG.NAME} Backend running on port ${port}`,
+    `🚀 ${process.env.NAME} Backend running on port ${port}`,
     'NestApplication',
   );
   Logger.log(`✅ Server ready on http://localhost:${port}`, 'NestApplication');

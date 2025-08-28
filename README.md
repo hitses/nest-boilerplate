@@ -102,6 +102,7 @@ Required environment variables, grouped by function:
 - MONGODB_URI → MongoDB connection URI (e.g., mongodb://localhost:27017/nest-boilerplate)
 - NODE_ENV → environment (development | production)
 - FRONTEND_URL → frontend URL for post-login redirects
+- NAME -> app name
 
 #### Google OAuth
 
